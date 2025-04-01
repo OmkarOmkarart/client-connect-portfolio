@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Linkedin, Mail, Download } from 'lucide-react';
+import { ArrowRight, Linkedin, Mail, Download, MapPin, Phone } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const HeroSection: React.FC = () => {
@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12">
             <div className="inline-block mb-6 p-2 border border-gold/30 bg-black/50 backdrop-blur">
-              <p className="text-gold font-medium">Program Manager</p>
+              <p className="text-gold font-medium">Program Manager | PMP & PRINCE2 Certified</p>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -33,12 +33,20 @@ const HeroSection: React.FC = () => {
               and digital transformation with proven expertise in delivering mission-critical projects.
             </p>
             
-            <div className="flex gap-6 mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex items-center text-gold">
+                <MapPin className="h-5 w-5 mr-2" />
+                <span>India</span>
+              </div>
+              <a href="tel:+919699903354" className="flex items-center text-gold hover:text-gold/80 transition-colors">
+                <Phone className="h-5 w-5 mr-2" />
+                <span>+91 9699903354</span>
+              </a>
               <a href="mailto:omkarfadnis777@gmail.com" className="flex items-center text-gold hover:text-gold/80 transition-colors">
                 <Mail className="h-5 w-5 mr-2" />
                 <span>Email</span>
               </a>
-              <a href="https://www.linkedin.com/in/omkar-fadnis" target="_blank" rel="noopener noreferrer" className="flex items-center text-gold hover:text-gold/80 transition-colors">
+              <a href="https://www.linkedin.com/in/omkarf/" target="_blank" rel="noopener noreferrer" className="flex items-center text-gold hover:text-gold/80 transition-colors">
                 <Linkedin className="h-5 w-5 mr-2" />
                 <span>LinkedIn</span>
               </a>
@@ -65,7 +73,7 @@ const HeroSection: React.FC = () => {
             <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 border border-gold/20 shadow-[0_0_25px_rgba(212,175,55,0.15)]">
               <div className="text-center mb-4">
                 <span className="inline-block bg-gold px-4 py-1 rounded-full text-black text-sm font-medium">
-                  10+ Years Experience
+                  8+ Years Experience
                 </span>
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center text-gold">
@@ -73,20 +81,20 @@ const HeroSection: React.FC = () => {
               </h2>
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="bg-black/60 p-4 rounded-lg border border-gold/10">
-                  <p className="text-3xl font-bold text-gold">15+</p>
-                  <p className="text-gold/70">Client Projects</p>
+                  <p className="text-3xl font-bold text-gold">$2M+</p>
+                  <p className="text-gold/70">Budget Managed</p>
                 </div>
                 <div className="bg-black/60 p-4 rounded-lg border border-gold/10">
-                  <p className="text-3xl font-bold text-gold">8+</p>
-                  <p className="text-gold/70">Years Experience</p>
+                  <p className="text-3xl font-bold text-gold">40%</p>
+                  <p className="text-gold/70">Efficiency Increase</p>
                 </div>
                 <div className="bg-black/60 p-4 rounded-lg border border-gold/10">
-                  <p className="text-3xl font-bold text-gold">20+</p>
-                  <p className="text-gold/70">Internal Programs</p>
+                  <p className="text-3xl font-bold text-gold">30%</p>
+                  <p className="text-gold/70">Faster Delivery</p>
                 </div>
                 <div className="bg-black/60 p-4 rounded-lg border border-gold/10">
                   <p className="text-3xl font-bold text-gold">95%</p>
-                  <p className="text-gold/70">On-time Delivery</p>
+                  <p className="text-gold/70">On-time Completion</p>
                 </div>
               </div>
             </div>

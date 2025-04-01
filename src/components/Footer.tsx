@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Linkedin, Twitter, Github } from 'lucide-react';
+import { Mail, Linkedin, Phone, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -21,10 +21,10 @@ const Footer: React.FC = () => {
                 <Linkedin size={18} className="text-gold" />
               </a>
               <a href="tel:+919699903354" className="bg-black/50 hover:bg-gold/20 transition-colors p-2 rounded-full border border-gold/20">
-                <Twitter size={18} className="text-gold" />
+                <Phone size={18} className="text-gold" />
               </a>
               <a href="#" className="bg-black/50 hover:bg-gold/20 transition-colors p-2 rounded-full border border-gold/20">
-                <Github size={18} className="text-gold" />
+                <MapPin size={18} className="text-gold" />
               </a>
             </div>
           </div>
@@ -36,6 +36,7 @@ const Footer: React.FC = () => {
               <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">Client Project Management</a></li>
               <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">Process Optimization</a></li>
               <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">Resource Planning</a></li>
+              <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">AI Implementation</a></li>
             </ul>
           </div>
           
@@ -53,6 +54,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gold/10 pt-6 text-center text-gold/50 text-sm">
           <p>© {new Date().getFullYear()} Omkar Fadnis. All rights reserved.</p>
+          <p className="mt-2">PMP & PRINCE2 Certified Program Manager</p>
         </div>
       </div>
     </footer>

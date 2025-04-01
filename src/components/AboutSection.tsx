@@ -1,11 +1,12 @@
 
 import React from 'react';
-import { Check, Briefcase, Users, Calendar, Globe, Award } from 'lucide-react';
+import { Check, Briefcase, Users, Calendar, Globe, Award, GraduationCap, Medal, FileText } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Separator } from '@/components/ui/separator';
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="section-padding bg-black relative">
+    <section id="about" className="section-padding bg-black relative py-24">
       <div className="absolute inset-0 opacity-30 z-0">
         <div className="h-full w-full bg-[url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1772')] bg-cover bg-fixed bg-center"></div>
       </div>
@@ -19,7 +20,7 @@ const AboutSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="relative">
             <div className="w-full md:w-5/6 mx-auto overflow-hidden rounded-lg border-2 border-gold/30">
               <AspectRatio ratio={4/5} className="bg-black">
@@ -31,10 +32,15 @@ const AboutSection: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
               </AspectRatio>
             </div>
-            <div className="absolute -bottom-6 -right-6 md:-right-10 w-32 h-32 bg-black border-2 border-gold p-4 flex items-center justify-center z-20">
-              <div className="text-center">
+            
+            <div className="absolute -bottom-6 -right-6 md:-right-10 w-auto h-auto bg-black border-2 border-gold p-4 flex flex-col items-center justify-center z-20">
+              <div className="text-center mb-2">
                 <Award className="w-10 h-10 text-gold mx-auto mb-2" />
                 <p className="text-gold text-sm">PMP Certified</p>
+              </div>
+              <div className="text-center">
+                <Medal className="w-10 h-10 text-gold mx-auto mb-2" />
+                <p className="text-gold text-sm">PRINCE2 Certified</p>
               </div>
             </div>
           </div>
@@ -74,9 +80,15 @@ const AboutSection: React.FC = () => {
                   <span className="font-medium text-gold">Resource Optimization</span> - Maximizing efficiency and output from available resources
                 </p>
               </div>
+              <div className="flex items-start">
+                <Check className="text-gold mr-3 mt-1 flex-shrink-0" />
+                <p className="text-gray-300">
+                  <span className="font-medium text-gold">AI & Automation</span> - Implementing AI-driven solutions to enhance productivity and reduce manual effort
+                </p>
+              </div>
             </div>
 
-            <div className="bg-black/70 backdrop-blur-sm p-6 rounded-lg border border-gold/20">
+            <div className="bg-black/70 backdrop-blur-sm p-6 rounded-lg border border-gold/20 mb-8">
               <h4 className="text-xl font-semibold text-gold mb-4">Professional Background</h4>
               
               <div className="space-y-6">
@@ -85,8 +97,18 @@ const AboutSection: React.FC = () => {
                     <Briefcase className="text-gold p-2 bg-black rounded-full border border-gold/30" size={40} />
                   </div>
                   <div>
-                    <h5 className="font-semibold text-white">Senior Program Manager</h5>
-                    <p className="text-gray-400">Enterprise Solutions Inc. | 2019 - Present</p>
+                    <h5 className="font-semibold text-white">Program Manager</h5>
+                    <p className="text-gray-400">E42.ai | July 2024 - Present</p>
+                  </div>
+                </div>
+                
+                <div className="flex">
+                  <div className="mr-4">
+                    <Briefcase className="text-gold p-2 bg-black rounded-full border border-gold/30" size={40} />
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-white">Project Manager</h5>
+                    <p className="text-gray-400">Simplifai | June 2022 - June 2024</p>
                   </div>
                 </div>
                 
@@ -95,8 +117,8 @@ const AboutSection: React.FC = () => {
                     <Users className="text-gold p-2 bg-black rounded-full border border-gold/30" size={40} />
                   </div>
                   <div>
-                    <h5 className="font-semibold text-white">Project Management Lead</h5>
-                    <p className="text-gray-400">Innovative Tech Group | 2016 - 2019</p>
+                    <h5 className="font-semibold text-white">Business Analyst</h5>
+                    <p className="text-gray-400">Signzy | April 2021 - June 2022</p>
                   </div>
                 </div>
                 
@@ -105,12 +127,96 @@ const AboutSection: React.FC = () => {
                     <Calendar className="text-gold p-2 bg-black rounded-full border border-gold/30" size={40} />
                   </div>
                   <div>
-                    <h5 className="font-semibold text-white">Project Coordinator</h5>
-                    <p className="text-gray-400">Strategic Solutions Partners | 2014 - 2016</p>
+                    <h5 className="font-semibold text-white">Project Manager</h5>
+                    <p className="text-gray-400">UpsideLMS | January 2020 - April 2021</p>
+                  </div>
+                </div>
+                
+                <div className="flex">
+                  <div className="mr-4">
+                    <Globe className="text-gold p-2 bg-black rounded-full border border-gold/30" size={40} />
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-white">IT Project Manager</h5>
+                    <p className="text-gray-400">Sunday Mobility | February 2018 - September 2019</p>
                   </div>
                 </div>
               </div>
             </div>
+            
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-black/70 backdrop-blur-sm p-6 rounded-lg border border-gold/20">
+                <div className="flex items-center mb-4">
+                  <GraduationCap className="text-gold mr-3" size={24} />
+                  <h4 className="text-xl font-semibold text-gold">Education</h4>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h5 className="font-semibold text-white">Master in Management Studies (IT)</h5>
+                    <p className="text-gray-400">Aditya Institute, Mumbai University</p>
+                    <p className="text-gray-500 text-sm">2016 - 2018</p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-white">Bachelor in Science (CS)</h5>
+                    <p className="text-gray-400">Modern College, Pune University</p>
+                    <p className="text-gray-500 text-sm">2013 - 2016</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-black/70 backdrop-blur-sm p-6 rounded-lg border border-gold/20">
+                <div className="flex items-center mb-4">
+                  <FileText className="text-gold mr-3" size={24} />
+                  <h4 className="text-xl font-semibold text-gold">Certifications</h4>
+                </div>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-center">
+                    <Award className="text-gold mr-2" size={16} />
+                    Project Management Professional (PMP)® – PMI
+                  </li>
+                  <li className="flex items-center">
+                    <Award className="text-gold mr-2" size={16} />
+                    PRINCE2® Practitioner & Foundation – AXELOS
+                  </li>
+                  <li className="flex items-center">
+                    <Award className="text-gold mr-2" size={16} />
+                    Software Product Management – Coursera
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="mt-16">
+          <h3 className="text-2xl font-semibold text-gold mb-6 text-center">Skills & Expertise</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {[
+              "Project & Program Management",
+              "Agile & Scrum",
+              "Stakeholder Management",
+              "Risk Mitigation",
+              "Budget Management",
+              "Automation & AI",
+              "LLMs",
+              "RPA",
+              "Email & Fintech Automation",
+              "Workflow Optimization",
+              "Enterprise Integrations",
+              "SFDC",
+              "Finacle",
+              "JIRA",
+              "SAP",
+              "Process Improvement",
+              "Digital Transformation",
+              "Team Management",
+              "Change Management",
+              "AI Documentation"
+            ].map((skill, index) => (
+              <div key={index} className="bg-black/50 border border-gold/30 px-4 py-3 rounded-md text-gold/80 text-center text-sm hover:bg-gold/10 transition-colors">
+                {skill}
+              </div>
+            ))}
           </div>
         </div>
       </div>
