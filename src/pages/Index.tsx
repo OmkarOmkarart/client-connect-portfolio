@@ -8,6 +8,7 @@ import ProjectsSection from '../components/ProjectsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import { Toaster } from "@/components/ui/toaster";
 
 const Index: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const Index: React.FC = () => {
         <ContactSection />
       </main>
       <Footer />
+      <Toaster />
     </div>
   );
 };

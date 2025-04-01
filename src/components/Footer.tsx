@@ -8,19 +8,19 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Program Management <span className="text-gold">Portfolio</span></h3>
+            <h3 className="text-2xl font-bold mb-4">Omkar <span className="text-gold">Fadnis</span></h3>
             <p className="text-gold/70 mb-6 max-w-md">
               Delivering strategic program management services that transform visions into reality. 
               Let's collaborate to drive your most important initiatives forward.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-black/50 hover:bg-gold/20 transition-colors p-2 rounded-full border border-gold/20">
+              <a href="mailto:omkarfadnis777@gmail.com" className="bg-black/50 hover:bg-gold/20 transition-colors p-2 rounded-full border border-gold/20">
                 <Mail size={18} className="text-gold" />
               </a>
-              <a href="#" className="bg-black/50 hover:bg-gold/20 transition-colors p-2 rounded-full border border-gold/20">
+              <a href="https://www.linkedin.com/in/omkarf/" target="_blank" rel="noopener noreferrer" className="bg-black/50 hover:bg-gold/20 transition-colors p-2 rounded-full border border-gold/20">
                 <Linkedin size={18} className="text-gold" />
               </a>
-              <a href="#" className="bg-black/50 hover:bg-gold/20 transition-colors p-2 rounded-full border border-gold/20">
+              <a href="tel:+919699903354" className="bg-black/50 hover:bg-gold/20 transition-colors p-2 rounded-full border border-gold/20">
                 <Twitter size={18} className="text-gold" />
               </a>
               <a href="#" className="bg-black/50 hover:bg-gold/20 transition-colors p-2 rounded-full border border-gold/20">
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gold/10 pt-6 text-center text-gold/50 text-sm">
-          <p>© {new Date().getFullYear()} Program Management Portfolio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Omkar Fadnis. All rights reserved.</p>
         </div>
       </div>
     </footer>
