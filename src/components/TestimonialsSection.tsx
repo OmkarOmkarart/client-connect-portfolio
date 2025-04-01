@@ -45,34 +45,34 @@ const testimonials: Testimonial[] = [
 
 const TestimonialsSection: React.FC = () => {
   return (
-    <section id="testimonials" className="section-padding bg-navy text-white">
+    <section id="testimonials" className="section-padding bg-premium-gradient text-gold">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What Clients Say</h2>
-          <div className="w-20 h-1 bg-teal mx-auto mb-6"></div>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          <div className="w-20 h-1 bg-gold mx-auto mb-6"></div>
+          <p className="text-lg text-gold/70 max-w-3xl mx-auto">
             Feedback from clients and stakeholders who've experienced the impact of my program management approach.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 text-white card-hover">
+            <Card key={index} className="bg-black/30 backdrop-blur-sm border border-gold/20 text-gold card-hover">
               <CardContent className="pt-6">
                 <div className="mb-4 flex">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 fill-gold text-gold" />
                   ))}
                 </div>
-                <p className="mb-6 text-gray-200 italic">"{testimonial.content}"</p>
+                <p className="mb-6 text-gold/80 italic">"{testimonial.content}"</p>
               </CardContent>
-              <CardFooter className="border-t border-white/10 pt-4 flex items-center">
-                <Avatar className="h-10 w-10 mr-3 bg-teal text-white">
+              <CardFooter className="border-t border-gold/10 pt-4 flex items-center">
+                <Avatar className="h-10 w-10 mr-3 bg-gold text-black">
                   <AvatarFallback>{testimonial.initials}</AvatarFallback>
                 </Avatar>
                 <div>
                   <p className="font-medium">{testimonial.author}</p>
-                  <p className="text-sm text-gray-300">{testimonial.position}</p>
+                  <p className="text-sm text-gold/70">{testimonial.position}</p>
                 </div>
               </CardFooter>
             </Card>
