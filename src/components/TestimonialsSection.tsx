@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
   {
     content: "Well, Omkar is one of those men who will keep on asking the right questions unless he finds the best solution for you. Appreciate this quality of yours Omkar, it really helps get the right solution design, Omkar has helped me with a great job on the email automation piece and we are working together now on an RPA solution. Thank you Omkar for your energetic and at the same time calm approach to deliver the best to suit the customer's requirements.",
     author: "Murtuza Balasinorwala",
-    position: "Client",
+    position: "Director, PineLabs",
     rating: 5,
     initials: "MB"
   },

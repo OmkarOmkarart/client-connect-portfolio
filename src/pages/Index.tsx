@@ -9,6 +9,7 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 import { Toaster } from "@/components/ui/toaster";
+import AnimatedGoldBanner from '../components/AnimatedGoldBanner';
 
 const Index: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const Index: React.FC = () => {
       <Navbar />
       <main>
         <HeroSection />
+        <AnimatedGoldBanner />
         <AboutSection />
         <ServicesSection />
         <ProjectsSection />
