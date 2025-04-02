@@ -73,7 +73,7 @@ const HeroSection: React.FC = () => {
             <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 border border-gold/20 shadow-[0_0_25px_rgba(212,175,55,0.15)]">
               <div className="text-center mb-4">
                 <span className="inline-block bg-gold px-4 py-1 rounded-full text-black text-sm font-medium">
-                  8+ Years Experience
+                  7 Years Experience
                 </span>
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center text-gold">
