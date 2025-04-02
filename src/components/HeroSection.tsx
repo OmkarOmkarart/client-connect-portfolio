@@ -17,6 +17,23 @@ const HeroSection: React.FC = () => {
         ></div>
       </div>
       
+      {/* Animated Golden Elements */}
+      <div className="absolute inset-0 z-10 overflow-hidden">
+        {/* Golden particles */}
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-gold animate-pulse opacity-70"></div>
+        <div className="absolute top-3/4 left-1/3 w-3 h-3 rounded-full bg-gold animate-pulse opacity-50 animation-delay-700"></div>
+        <div className="absolute top-1/2 right-1/4 w-2 h-2 rounded-full bg-gold animate-pulse opacity-60 animation-delay-1000"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-1 h-1 rounded-full bg-gold animate-pulse opacity-80 animation-delay-1500"></div>
+        
+        {/* Golden lines */}
+        <div className="absolute top-1/3 left-0 w-full h-[1px] bg-gold/10"></div>
+        <div className="absolute top-2/3 left-0 w-full h-[1px] bg-gold/10"></div>
+        
+        {/* Golden circular elements */}
+        <div className="absolute -top-40 -left-40 w-80 h-80 border border-gold/10 rounded-full"></div>
+        <div className="absolute -bottom-60 -right-60 w-120 h-120 border border-gold/10 rounded-full"></div>
+      </div>
+      
       <div className="container mx-auto px-4 relative z-30">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12">
@@ -73,7 +90,7 @@ const HeroSection: React.FC = () => {
             <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 border border-gold/20 shadow-[0_0_25px_rgba(212,175,55,0.15)]">
               <div className="text-center mb-4">
                 <span className="inline-block bg-gold px-4 py-1 rounded-full text-black text-sm font-medium">
-                  7 Years Experience
+                  7+ Years Experience
                 </span>
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center text-gold">

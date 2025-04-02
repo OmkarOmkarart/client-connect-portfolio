@@ -61,7 +61,7 @@ const projects: Project[] = [
     description: "Led a project to automate accounts payable processes for large warehouse and automotive firms. Integrated AI-driven workflows, enabling real-time invoice processing, vendor management, and fraud detection, which led to significant time savings and cost reductions.",
     role: "Product, Project, and Program Manager",
     tags: ["Accounts Payable", "Automation", "AI", "Fraud Detection"],
-    image: "https://images.unsplash.com/photo-1650594208529-3fbd46d1da82?q=80&w=1770",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1772",
     icon: <FileCheck className="h-6 w-6 text-gold" />
   },
   {

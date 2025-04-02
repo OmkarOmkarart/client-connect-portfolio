@@ -31,7 +31,7 @@ const AnimatedGoldBanner: React.FC = () => {
       
       {/* Animated gold particles */}
       <div className="absolute inset-0 z-20">
-        {Array.from({ length: 15 }).map((_, index) => (
+        {Array.from({ length: 20 }).map((_, index) => (
           <motion.div
             key={`particle-${index}`}
             className="absolute h-2 w-2 rounded-full bg-gold/80"
@@ -110,6 +110,21 @@ const AnimatedGoldBanner: React.FC = () => {
           rotate: { duration: 25, repeat: Infinity, ease: "linear" },
           scale: { duration: 10, repeat: Infinity, ease: "easeInOut" }
         }}
+      />
+      
+      {/* Additional decorative elements */}
+      <motion.div 
+        className="absolute top-10 right-10 w-16 h-16 rotate-45"
+        animate={{ rotate: [45, 90, 45] }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <div className="w-full h-full border-t border-r border-gold/30"></div>
+      </motion.div>
+      
+      <motion.div 
+        className="absolute bottom-10 left-10 w-4 h-4 bg-gold/20 rounded-full"
+        animate={{ scale: [1, 1.5, 1] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       />
     </div>
   );

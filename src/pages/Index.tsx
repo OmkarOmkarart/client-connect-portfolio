@@ -10,10 +10,12 @@ import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 import { Toaster } from "@/components/ui/toaster";
 import AnimatedGoldBanner from '../components/AnimatedGoldBanner';
+import BackgroundAnimation from '../components/BackgroundAnimation';
 
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen">
+      <BackgroundAnimation />
       <Navbar />
       <main>
         <HeroSection />
