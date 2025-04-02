@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <div className="mb-4">
               <img 
-                src="/lovable-uploads/171c0532-10bf-490f-8a67-53a6d6e9e7fb.png" 
+                src="/lovable-uploads/35957e47-1a44-4523-8523-ccbc288580dd.png" 
                 alt="Omkar Fadnis" 
                 className="h-12" 
               />

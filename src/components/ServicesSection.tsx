@@ -1,38 +1,38 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Briefcase, Users, Calendar, Globe, FileText, Settings, BarChart, Code, Cpu, LineChart, TrendingUp, Zap } from 'lucide-react';
+import { Briefcase, Users, Calendar, Globe, FileText, Settings, BarChart, Code, Cpu, LineChart, TrendingUp, Zap, Target, Award, Shield, PieChart, ArrowUpRight, Brain } from 'lucide-react';
 
 const services = [
   {
     icon: <TrendingUp className="h-10 w-10 text-gold" />,
-    title: "Program Strategy",
-    description: "Developing comprehensive program roadmaps that align with organizational objectives and deliver measurable business value."
+    title: "Strategic Program Leadership",
+    description: "Developing comprehensive program roadmaps that align with organizational objectives and deliver measurable business value with a focus on strategic outcomes."
   },
   {
-    icon: <Users className="h-10 w-10 text-gold" />,
-    title: "Client Project Management",
-    description: "Managing end-to-end client projects with clear communication, milestone tracking, and quality deliverables."
+    icon: <Target className="h-10 w-10 text-gold" />,
+    title: "Client Project Excellence",
+    description: "Managing end-to-end client projects with clear communication, milestone tracking, and quality deliverables that exceed expectations."
   },
   {
     icon: <Settings className="h-10 w-10 text-gold" />,
-    title: "Process Optimization",
-    description: "Streamlining workflows and implementing best practices to enhance efficiency and productivity."
+    title: "Process Transformation",
+    description: "Reimagining workflows and implementing best practices to enhance efficiency, productivity and drive competitive advantage."
   },
   {
     icon: <BarChart className="h-10 w-10 text-gold" />,
-    title: "Resource Planning",
-    description: "Strategic allocation of resources to ensure projects are delivered on time and within budget constraints."
+    title: "Strategic Resource Optimization",
+    description: "Expert allocation of resources to ensure projects are delivered on time and within budget constraints while maximizing ROI."
   },
   {
-    icon: <LineChart className="h-10 w-10 text-gold" />,
-    title: "Performance Tracking",
-    description: "Implementing KPIs and metrics to monitor program performance and enable data-driven decision making."
+    icon: <PieChart className="h-10 w-10 text-gold" />,
+    title: "Performance Analytics",
+    description: "Implementing sophisticated KPIs and metrics to monitor program performance and enable data-driven decision making for continuous improvement."
   },
   {
-    icon: <Cpu className="h-10 w-10 text-gold" />,
-    title: "AI Implementation",
-    description: "Leading integration of artificial intelligence solutions to drive automation and business transformation."
+    icon: <Brain className="h-10 w-10 text-gold" />,
+    title: "AI Implementation & Integration",
+    description: "Leading integration of cutting-edge artificial intelligence solutions to drive automation and business transformation for the digital age."
   }
 ];
 
@@ -62,7 +62,7 @@ const ServicesSection: React.FC = () => {
           {services.map((service, index) => (
             <Card key={index} className="card-hover border border-gold/20 bg-black/60 backdrop-blur-sm transition-all duration-300 hover:shadow-[0_0_25px_rgba(212,175,55,0.15)]">
               <CardHeader className="pb-2">
-                <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-full bg-black border border-gold/30">
+                <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-full bg-black border border-gold/30 transform transition-transform group-hover:rotate-12">
                   {service.icon}
                 </div>
                 <CardTitle className="text-xl font-bold text-gold">{service.title}</CardTitle>
@@ -71,6 +71,11 @@ const ServicesSection: React.FC = () => {
                 <CardDescription className="text-gold/70 text-base">
                   {service.description}
                 </CardDescription>
+                <div className="mt-4 flex justify-end">
+                  <div className="p-2 rounded-full bg-gold/10 hover:bg-gold/20 transition-colors cursor-pointer">
+                    <ArrowUpRight className="h-4 w-4 text-gold" />
+                  </div>
+                </div>
               </CardContent>
             </Card>
           ))}
@@ -80,7 +85,7 @@ const ServicesSection: React.FC = () => {
         <div className="mt-20 relative rounded-xl overflow-hidden">
           <div className="absolute inset-0 bg-black/70 z-10"></div>
           <img 
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1770" 
+            src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1770" 
             alt="Program Management" 
             className="w-full h-64 object-cover"
           />

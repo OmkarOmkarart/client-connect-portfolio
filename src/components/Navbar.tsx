@@ -30,9 +30,9 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="text-gold font-bold text-2xl flex items-center">
             <img 
-              src="/lovable-uploads/171c0532-10bf-490f-8a67-53a6d6e9e7fb.png" 
+              src="/lovable-uploads/35957e47-1a44-4523-8523-ccbc288580dd.png" 
               alt="Omkar Fadnis" 
-              className="h-12 mr-2" 
+              className="h-14 mr-2" 
             />
           </div>
           

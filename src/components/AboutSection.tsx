@@ -1,10 +1,34 @@
 
 import React from 'react';
-import { Check, Briefcase, Users, Calendar, Globe, Award, GraduationCap, Medal, FileText } from 'lucide-react';
+import { Check, Briefcase, Users, Calendar, Globe, Award, GraduationCap, Medal, FileText, Brain, Cpu, BarChart, Settings, Zap, Layers, Database, Shield, Target, ArrowUpRight } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Separator } from '@/components/ui/separator';
 
 const AboutSection: React.FC = () => {
+  // Define skill categories with their respective icons
+  const skillCategories = [
+    {
+      name: "Program Leadership",
+      icon: <Briefcase className="h-5 w-5 text-gold mr-2" />,
+      skills: ["Program Strategy", "Project Management", "Agile & Scrum", "Stakeholder Management", "Risk Mitigation"]
+    },
+    {
+      name: "AI & Automation",
+      icon: <Brain className="h-5 w-5 text-gold mr-2" />,
+      skills: ["LLMs", "RPA", "Email Automation", "Workflow Optimization", "Generative AI"]
+    },
+    {
+      name: "Enterprise Systems",
+      icon: <Database className="h-5 w-5 text-gold mr-2" />,
+      skills: ["SFDC", "Finacle", "JIRA", "SAP", "Payment Gateways"]
+    },
+    {
+      name: "Digital Transformation",
+      icon: <Zap className="h-5 w-5 text-gold mr-2" />,
+      skills: ["Process Improvement", "Change Management", "Cross-functional Leadership", "AI Documentation", "Compliance"]
+    }
+  ];
+
   return (
     <section id="about" className="section-padding bg-black relative py-24">
       <div className="absolute inset-0 opacity-30 z-0">
@@ -190,31 +214,41 @@ const AboutSection: React.FC = () => {
         
         <div className="mt-16">
           <h3 className="text-2xl font-semibold text-gold mb-6 text-center">Skills & Expertise</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {skillCategories.map((category, index) => (
+              <div key={index} className="bg-black/70 backdrop-blur-sm border border-gold/20 rounded-lg p-6 hover:shadow-[0_0_30px_rgba(212,175,55,0.15)] transition-all duration-300">
+                <div className="flex items-center mb-4">
+                  {category.icon}
+                  <h4 className="text-xl font-semibold text-gold">{category.name}</h4>
+                </div>
+                <div className="space-y-3">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div key={skillIndex} className="flex items-center">
+                      <ArrowUpRight className="h-4 w-4 text-gold mr-2" />
+                      <span className="text-gold/80">{skill}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
-              "Project & Program Management",
-              "Agile & Scrum",
-              "Stakeholder Management",
-              "Risk Mitigation",
-              "Budget Management",
-              "Automation & AI",
-              "LLMs",
-              "RPA",
-              "Email & Fintech Automation",
-              "Workflow Optimization",
-              "Enterprise Integrations",
-              "SFDC",
-              "Finacle",
-              "JIRA",
-              "SAP",
-              "Process Improvement",
-              "Digital Transformation",
-              "Team Management",
-              "Change Management",
-              "AI Documentation"
-            ].map((skill, index) => (
-              <div key={index} className="bg-black/50 border border-gold/30 px-4 py-3 rounded-md text-gold/80 text-center text-sm hover:bg-gold/10 transition-colors">
-                {skill}
+              { icon: <Target className="h-4 w-4 text-gold mr-2" />, skill: "Budgeting ($2M+)" },
+              { icon: <Cpu className="h-4 w-4 text-gold mr-2" />, skill: "Fintech Automation" },
+              { icon: <Shield className="h-4 w-4 text-gold mr-2" />, skill: "Compliance" },
+              { icon: <Database className="h-4 w-4 text-gold mr-2" />, skill: "CRMNEXT" },
+              { icon: <Settings className="h-4 w-4 text-gold mr-2" />, skill: "Process Improvement" },
+              { icon: <BarChart className="h-4 w-4 text-gold mr-2" />, skill: "Analytics" },
+              { icon: <Users className="h-4 w-4 text-gold mr-2" />, skill: "Team Leadership" },
+              { icon: <Globe className="h-4 w-4 text-gold mr-2" />, skill: "Enterprise Integrations" },
+              { icon: <Brain className="h-4 w-4 text-gold mr-2" />, skill: "AI Documentation" },
+              { icon: <Zap className="h-4 w-4 text-gold mr-2" />, skill: "Digital Transformation" }
+            ].map((item, index) => (
+              <div key={index} className="bg-black/50 border border-gold/30 px-4 py-3 rounded-md text-gold/80 text-center text-sm hover:bg-gold/10 transition-colors flex items-center justify-center">
+                {item.icon}
+                <span>{item.skill}</span>
               </div>
             ))}
           </div>

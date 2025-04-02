@@ -59,7 +59,7 @@ const TestimonialsSection: React.FC = () => {
         <div className="absolute inset-0 bg-black/90 z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black to-black/95 z-20"></div>
         <div 
-          className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1770')] bg-cover bg-center bg-fixed z-0"
+          className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1770')] bg-cover bg-center bg-fixed z-0"
           style={{ filter: 'brightness(0.2)' }}
         ></div>
       </div>
