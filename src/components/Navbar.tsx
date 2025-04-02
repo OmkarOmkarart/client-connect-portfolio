@@ -28,8 +28,12 @@ const Navbar: React.FC = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-gold font-bold text-2xl">
-            PM<span className="text-gold">Portfolio</span>
+          <div className="text-gold font-bold text-2xl flex items-center">
+            <img 
+              src="/lovable-uploads/171c0532-10bf-490f-8a67-53a6d6e9e7fb.png" 
+              alt="Omkar Fadnis" 
+              className="h-12 mr-2" 
+            />
           </div>
           
           {/* Desktop Navigation */}

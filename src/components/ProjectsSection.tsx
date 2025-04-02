@@ -12,67 +12,100 @@ interface Project {
   title: string;
   category: 'client' | 'internal';
   description: string;
+  role: string;
   tags: string[];
-  duration: string;
-  outcome: string;
   image: string;
 }
 
 const projects: Project[] = [
   {
-    title: "Enterprise CRM Implementation",
+    title: "Stock Exchange Platform using Cryptocurrency",
     category: "client",
-    description: "Led the implementation of a complex CRM system for a Fortune 500 financial services company, integrating with 12+ legacy systems.",
-    tags: ["CRM", "Financial Services", "System Integration"],
-    duration: "18 months",
-    outcome: "30% increase in customer satisfaction, 25% reduction in processing time.",
-    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?q=80&w=1770"
+    description: "Led the development of a decentralized stock exchange platform utilizing cryptocurrency for secure, real-time trading. Oversaw the integration of blockchain technology, ensuring compliance with financial regulations and delivering a seamless user experience for both retail and institutional traders.",
+    role: "Product, Project, and Program Manager",
+    tags: ["Cryptocurrency", "Blockchain", "Finance", "Compliance"],
+    image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1770"
   },
   {
-    title: "Digital Transformation Initiative",
+    title: "Loan Application Mobile App for Major Banks",
     category: "client",
-    description: "Managed a comprehensive digital transformation program for a healthcare provider, modernizing patient management systems.",
-    tags: ["Healthcare", "Digital Transformation", "Change Management"],
-    duration: "24 months",
-    outcome: "40% improvement in operational efficiency, $2.3M annual cost savings.",
+    description: "Managed the end-to-end development of a robust loan application platform for major banking institutions. Delivered both Android and iOS apps, providing a user-friendly interface, secure document management, and real-time loan approval updates to enhance the customer experience and reduce processing time.",
+    role: "Product, Project, and Program Manager",
+    tags: ["Mobile Apps", "Banking", "Android", "iOS", "UX/UI"],
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1770"
+  },
+  {
+    title: "OTT Platform UI/UX Design for Mobile and Web Apps",
+    category: "client",
+    description: "Directed the design and implementation of an intuitive UI/UX for an OTT platform across mobile and web applications. Focused on providing a seamless viewing experience, including personalized recommendations, content discovery, and smooth navigation, ensuring high user engagement and retention.",
+    role: "Product, Project, and Program Manager",
+    tags: ["UI/UX", "OTT Platform", "Mobile Apps", "Web Design"],
+    image: "https://images.unsplash.com/photo-1586899028174-e7098604235b?q=80&w=1771"
+  },
+  {
+    title: "Email Automation Using LLMs and API Integrations",
+    category: "client",
+    description: "Spearheaded the development of an AI-driven email automation system leveraging large language models (LLMs) and various third-party API integrations. This project automated personalized email campaigns, improving customer engagement and conversion rates while reducing manual effort.",
+    role: "Product, Project, and Program Manager",
+    tags: ["LLMs", "Automation", "API Integration", "Email Marketing"],
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1770"
   },
   {
-    title: "Agile Methodology Adoption",
+    title: "Accounts Payable Automation for Warehouse and Automotive Companies",
+    category: "client",
+    description: "Led a project to automate accounts payable processes for large warehouse and automotive firms. Integrated AI-driven workflows, enabling real-time invoice processing, vendor management, and fraud detection, which led to significant time savings and cost reductions.",
+    role: "Product, Project, and Program Manager",
+    tags: ["Accounts Payable", "Automation", "AI", "Fraud Detection"],
+    image: "https://images.unsplash.com/photo-1650594208529-3fbd46d1da82?q=80&w=1770"
+  },
+  {
+    title: "HR Use Case Using Agentic AI",
+    category: "client",
+    description: "Managed the development of an AI-driven HR solution using generative AI to optimize recruitment, employee engagement, and performance management. The system leveraged natural language processing (NLP) and data analytics to provide personalized recommendations and insights for HR teams.",
+    role: "Product, Project, and Program Manager",
+    tags: ["HR Tech", "Generative AI", "NLP", "Analytics"],
+    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1770"
+  },
+  {
+    title: "CASA Projects with Finacle Integration for NBFCs",
+    category: "client",
+    description: "Oversaw the integration of Core Banking Systems (CBS) with Finacle for CASA (Current Account and Savings Account) products for Non-Banking Financial Companies (NBFCs). The project aimed at streamlining account management processes, improving customer onboarding, and ensuring seamless transactions across platforms.",
+    role: "Product, Project, and Program Manager",
+    tags: ["Finacle", "CASA", "NBFC", "Core Banking"],
+    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=1770"
+  },
+  {
+    title: "Internal Workflow Automation System",
     category: "internal",
-    description: "Spearheaded the transition from waterfall to agile methodology across all development teams, including training and process redesign.",
-    tags: ["Agile", "Process Improvement", "Team Development"],
-    duration: "8 months",
-    outcome: "35% faster time-to-market, increased team satisfaction scores by 28%.",
+    description: "Led the design and implementation of an internal workflow automation platform, streamlining processes across multiple departments. The system automated task allocation, approval workflows, and reporting, significantly reducing time spent on manual processes and improving team productivity.",
+    role: "Product, Project, and Program Manager",
+    tags: ["Workflow Automation", "Process Improvement", "Internal Systems"],
     image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?q=80&w=1770"
   },
   {
-    title: "Supply Chain Optimization",
-    category: "client",
-    description: "Redesigned supply chain processes for a manufacturing client, implementing new inventory management systems and vendor protocols.",
-    tags: ["Supply Chain", "Manufacturing", "Logistics"],
-    duration: "12 months",
-    outcome: "Reduced inventory costs by 18%, improved fulfillment rates to 97%.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1770"
+    title: "Employee Performance and Engagement Analytics",
+    category: "internal",
+    description: "Managed the development of a data-driven internal program aimed at analyzing employee performance and engagement. The platform integrated HR metrics, feedback surveys, and productivity data to provide managers with actionable insights for team development and employee satisfaction.",
+    role: "Product, Project, and Program Manager",
+    tags: ["Analytics", "HR Metrics", "Employee Engagement"],
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1770"
   },
   {
-    title: "Project Management Office (PMO) Establishment",
+    title: "Internal Knowledge Sharing Platform",
     category: "internal",
-    description: "Designed and implemented a centralized PMO to standardize project management practices and improve resource allocation.",
-    tags: ["PMO", "Governance", "Best Practices"],
-    duration: "6 months",
-    outcome: "Standardized reporting across 30+ projects, improved resource utilization by 22%.",
+    description: "Directed the creation of an internal knowledge management system that centralized documents, best practices, and training materials for employees. The platform incorporated AI-driven search features, enhancing knowledge discovery and promoting cross-functional collaboration within the organization.",
+    role: "Product, Project, and Program Manager",
+    tags: ["Knowledge Management", "AI Search", "Collaboration"],
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1772"
   },
   {
-    title: "Customer Experience Enhancement",
-    category: "client",
-    description: "Led a cross-functional initiative to redesign customer touchpoints and service processes for a retail organization.",
-    tags: ["Customer Experience", "Retail", "Process Design"],
-    duration: "10 months",
-    outcome: "NPS score improved from 32 to 48, 15% increase in customer retention.",
+    title: "Internal Chatbot for IT Support",
+    category: "internal",
+    description: "Spearheaded the development of an internal AI-powered chatbot for IT support, allowing employees to resolve technical issues and access FAQs without involving support staff. The chatbot provided real-time solutions, improving efficiency and reducing IT response times.",
+    role: "Product, Project, and Program Manager",
+    tags: ["Chatbot", "AI", "IT Support", "Automation"],
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1420"
-  },
+  }
 ];
 
 const ProjectsSection: React.FC = () => {
@@ -155,11 +188,6 @@ const ProjectsSection: React.FC = () => {
                     {project.category === 'client' ? 'Client Project' : 'Internal Program'}
                   </Badge>
                 </div>
-                <div className="absolute top-4 right-4">
-                  <Badge variant="outline" className="text-white border-gold/30 bg-black/60">
-                    {project.duration}
-                  </Badge>
-                </div>
               </div>
               
               <CardHeader className="pb-2">
@@ -168,8 +196,8 @@ const ProjectsSection: React.FC = () => {
               
               <CardContent>
                 <p className="text-gray-300 mb-3">{project.description}</p>
-                <p className="text-sm font-medium text-gold mb-2">Outcome:</p>
-                <p className="text-gray-300 text-sm mb-4">{project.outcome}</p>
+                <p className="text-sm font-medium text-gold mb-2">Role:</p>
+                <p className="text-gray-300 text-sm mb-4">{project.role}</p>
                 <div className="flex flex-wrap gap-2 mt-3">
                   {project.tags.map((tag, tagIndex) => (
                     <Badge key={tagIndex} variant="outline" className="border-gold/30 text-gold/80">

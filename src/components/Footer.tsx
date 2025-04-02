@@ -8,10 +8,17 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Omkar <span className="text-gold">Fadnis</span></h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/171c0532-10bf-490f-8a67-53a6d6e9e7fb.png" 
+                alt="Omkar Fadnis" 
+                className="h-12" 
+              />
+            </div>
             <p className="text-gold/70 mb-6 max-w-md">
-              Delivering strategic program management services that transform visions into reality. 
-              Let's collaborate to drive your most important initiatives forward.
+              Strategic program management professional specializing in AI-driven automation, 
+              fintech solutions, and digital transformation with proven expertise in 
+              delivering mission-critical projects.
             </p>
             <div className="flex space-x-4">
               <a href="mailto:omkarfadnis777@gmail.com" className="bg-black/50 hover:bg-gold/20 transition-colors p-2 rounded-full border border-gold/20">
@@ -30,13 +37,13 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold text-lg mb-4">Services</h4>
+            <h4 className="font-semibold text-lg mb-4">Expertise</h4>
             <ul className="space-y-2">
               <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">Program Strategy</a></li>
-              <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">Client Project Management</a></li>
-              <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">Process Optimization</a></li>
-              <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">Resource Planning</a></li>
               <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">AI Implementation</a></li>
+              <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">Digital Transformation</a></li>
+              <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">Agile Methodology</a></li>
+              <li><a href="#services" className="text-gold/70 hover:text-gold transition-colors">Enterprise Integrations</a></li>
             </ul>
           </div>
           
