@@ -1,5 +1,6 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 
 interface BackgroundPatternProps {
   className?: string;
@@ -12,6 +13,22 @@ const BackgroundPattern: React.FC<BackgroundPatternProps> = ({
   patternType = 'dots',
   opacity = 0.05
 }) => {
+  const controls = useAnimation();
+  
+  useEffect(() => {
+    // Subtle background animation
+    const animateBackground = async () => {
+      while (true) {
+        await controls.start({
+          backgroundPosition: ['0% 0%', '2% 2%', '0% 0%'],
+          transition: { duration: 20, ease: "easeInOut" }
+        });
+      }
+    };
+    
+    animateBackground();
+  }, [controls]);
+
   const getPatternUrl = () => {
     switch (patternType) {
       case 'grid':
@@ -27,12 +44,13 @@ const BackgroundPattern: React.FC<BackgroundPatternProps> = ({
   };
 
   return (
-    <div 
+    <motion.div 
       className={`absolute inset-0 opacity-${Math.round(opacity * 100)} z-0 ${className}`}
       style={{
         backgroundImage: `url("${getPatternUrl()}")`,
       }}
-    ></div>
+      animate={controls}
+    ></motion.div>
   );
 };
 
