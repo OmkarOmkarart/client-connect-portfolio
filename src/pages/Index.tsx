@@ -11,11 +11,13 @@ import Footer from '../components/Footer';
 import { Toaster } from "@/components/ui/toaster";
 import AnimatedGoldBanner from '../components/AnimatedGoldBanner';
 import BackgroundAnimation from '../components/BackgroundAnimation';
+import GoldenDecorations from '../components/GoldenDecorations';
 
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen">
       <BackgroundAnimation />
+      <GoldenDecorations />
       <Navbar />
       <main>
         <HeroSection />
