@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Check, Briefcase, Users, Calendar, Globe, Award, GraduationCap, Medal, FileText, Brain, Cpu, BarChart, Settings, Zap, Layers, Database, Shield, Target, ArrowUpRight } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
@@ -74,7 +73,7 @@ const AboutSection: React.FC = () => {
               Turning Vision Into Reality
             </h3>
             <p className="text-gray-300 mb-6">
-              With over 8 years of experience in program management, I've successfully led 
+              With over 7+ years of experience in program management, I've successfully led 
               initiatives across various industries, helping organizations achieve their 
               strategic objectives through disciplined planning and execution.
             </p>

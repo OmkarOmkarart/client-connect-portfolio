@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -29,12 +28,18 @@ const ContactSection: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
+    // Create mailto link with form data
+    const mailtoLink = `mailto:omkarfadnis777@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
+    
+    // Open the user's email client
+    window.open(mailtoLink, '_blank');
+    
+    // Show success toast and reset form
     setTimeout(() => {
       setIsSubmitting(false);
       toast({
-        title: "Message Sent",
-        description: "Thank you for your message. I'll get back to you soon!",
+        title: "Email Client Opened",
+        description: "Your message has been prepared for sending via your email client.",
         duration: 5000,
       });
       
@@ -45,7 +50,7 @@ const ContactSection: React.FC = () => {
         subject: '',
         message: ''
       });
-    }, 1500);
+    }, 500);
   };
 
   return (
@@ -177,7 +182,7 @@ const ContactSection: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gold mb-1">Location</h4>
-                    <p className="text-white">Mumbai, India (Available for remote work)</p>
+                    <p className="text-white">Pune, India (Open for remote work)</p>
                   </div>
                 </div>
               </div>

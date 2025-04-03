@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Linkedin, Phone, MapPin } from 'lucide-react';
 
@@ -61,7 +60,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gold/10 pt-6 text-center text-gold/50 text-sm">
           <p>© {new Date().getFullYear()} Omkar Fadnis. All rights reserved.</p>
-          <p className="mt-2">PMP & PRINCE2 Certified Program Manager</p>
+          <p className="mt-2">PMP & PRINCE2 Certified Program Manager | Pune, India</p>
         </div>
       </div>
     </footer>
